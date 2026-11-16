@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="686" height="424" viewBox="0 0 686 424" role="img" aria-labelledby="title desc">
+<title id="title">Primer Seminario de Investigación en Educación Superior</title>
+<desc id="desc">Diseño vectorial inspirado en el afiche del Primer Seminario de Investigación en Educación Superior del Pronabec: fondo claro, formas fucsias y azules, título principal azul.</desc>
+<defs><clipPath id="frame"><rect width="686" height="424" rx="0"/></clipPath></defs>
+<g clip-path="url(#frame)">
+<rect width="686" height="424" fill="#fcf6ef"/>
+<path d="M0 0 H315 C277 24 246 67 196 77 C143 88 105 48 59 52 C29 53 14 61 0 71 Z" fill="#d24370"/>
+<path d="M495 0h130c-21 11-33 38-53 47-36 17-49-23-77-47Z" fill="#d24370"/>
+<circle cx="256" cy="-20" r="63" fill="#f4b8c9"/><circle cx="256" cy="-20" r="38" fill="#193c5c"/>
+<circle cx="256" cy="-20" r="73" fill="none" stroke="#20364d" stroke-dasharray="2 2"/>
+<g fill="#253e62" font-family="Arial,Helvetica,sans-serif" font-weight="800">
+<text x="343" y="191" text-anchor="middle" font-size="59" letter-spacing="-1">PRIMER SEMINARIO</text>
+</g>
+<text x="343" y="247" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="25.2" fill="#d24370" text-anchor="middle">DE INVESTIGACIÓN EN EDUCACIÓN SUPERIOR</text>
+<line x1="118" y1="276" x2="567" y2="276" stroke="#eeaac1" stroke-width="2"/>
+<g fill="#d24370" opacity=".37">
+<circle cx="38" cy="366" r="3"/><circle cx="51" cy="357" r="3"/><circle cx="65" cy="361" r="3"/><circle cx="28" cy="381" r="3"/><circle cx="43" cy="380" r="3"/><circle cx="60" cy="378" r="3"/><circle cx="38" cy="397" r="3"/><circle cx="52" cy="392" r="3"/>
+<circle cx="646" cy="50" r="3"/><circle cx="633" cy="61" r="3"/><circle cx="660" cy="67" r="3"/><circle cx="646" cy="80" r="3"/><circle cx="630" cy="84" r="3"/><circle cx="663" cy="90" r="3"/>
+</g>
+<g fill="#122438"><circle cx="622" cy="17" r="1.7"/><circle cx="636" cy="17" r="1.7"/><circle cx="650" cy="17" r="1.7"/><circle cx="664" cy="17" r="1.7"/><circle cx="622" cy="30" r="1.7"/><circle cx="636" cy="30" r="1.7"/><circle cx="650" cy="30" r="1.7"/><circle cx="664" cy="30" r="1.7"/><circle cx="8" cy="407" r="1.7"/><circle cx="23" cy="407" r="1.7"/><circle cx="38" cy="407" r="1.7"/></g>
+<path d="M551 424c3-46 39-98 75-108 23-7 48-3 60-23v131Z" fill="#25456b"/>
+<path d="M493 424c22-44 31-23 56-16 23 7 41-8 47-35 8-36 39-55 67-42 7 3 15 2 23-2v95Z" fill="#d24370"/>
+<path d="M0 0h686v424H0Z" fill="none" stroke="#f5e8e0"/>
+</g>
+</svg>
