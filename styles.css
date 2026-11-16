@@ -382,29 +382,6 @@
   line-height:1.85;
   margin:0 0 19px;
 }
-.diffusion-facts {
-  display:grid;
-  width:100%;
-  gap:12px;
-  margin:0 0 25px;
-  padding:17px 0;
-  border-top:1px solid #3c5569;
-  border-bottom:1px solid #3c5569;
-}
-.diffusion-facts div {display:grid;grid-template-columns:103px 1fr;gap:10px;}
-.diffusion-facts dt {
-  color:#7de1c4;
-  text-transform:uppercase;
-  font-weight:800;
-  font-size:9px;
-  letter-spacing:.08em;
-}
-.diffusion-facts dd {
-  margin:0;
-  color:#b9cdda;
-  font-size:12px;
-  line-height:1.65;
-}
 .diffusion-links {display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-top:auto;}
 .diffusion-links a {
   display:inline-flex;
@@ -433,7 +410,6 @@
 @media(max-width:760px){
   .diffusion-visual {padding:18px;}
   .diffusion-content {padding:24px 20px;}
-  .diffusion-facts div {grid-template-columns:1fr;gap:2px;}
 }
 
 /* El enlace adicional de Difusión conserva la navegación legible en pantallas intermedias. */
