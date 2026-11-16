@@ -464,3 +464,7 @@
   .section-experience .experience-item {grid-template-columns:1fr;gap:10px;padding:25px 0;}
   .section-experience .experience-item p {font-size:13px;}
 }
+
+/* Correo de contacto visible y accesible. */
+.contact-action a.contact-email{color:#bce6da;font-size:13px;font-weight:600;overflow-wrap:anywhere;text-decoration:underline;text-decoration-color:#4b827b;text-underline-offset:4px;max-width:100%;}
+.contact-action a.contact-email:hover,.contact-action a.contact-email:focus-visible{color:var(--accent);text-decoration-color:var(--accent);}
