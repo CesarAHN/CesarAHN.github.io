@@ -468,3 +468,21 @@
 /* Correo de contacto visible y accesible. */
 .contact-action a.contact-email{color:#bce6da;font-size:13px;font-weight:600;overflow-wrap:anywhere;text-decoration:underline;text-decoration-color:#4b827b;text-underline-offset:4px;max-width:100%;}
 .contact-action a.contact-email:hover,.contact-action a.contact-email:focus-visible{color:var(--accent);text-decoration-color:var(--accent);}
+
+/* Dos secciones del portafolio: estudios publicados y proyectos personales */
+.section-studies {background:var(--bg);}
+.section-projects {background:var(--bg2);border-block:1px solid var(--line);}
+.section-studies .projects-note,.section-projects .projects-note {margin-top:25px;}
+@media(min-width:761px) and (max-width:1050px){
+  .header-inner {gap:13px;}
+  .nav {gap:13px;}
+  .brand-caption {display:none;}
+  .nav a {font-size:10px;}
+  .nav .nav-contact {padding:10px 12px;}
+}
+@media(min-width:761px) and (max-width:840px){
+  .nav {gap:9px;}
+  .brand {gap:10px;}
+  .brand-mark {font-size:24px;}
+  .nav a {font-size:9px;}
+}

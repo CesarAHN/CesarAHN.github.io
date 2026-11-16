@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261116-contacto-email">
+  <link rel="stylesheet" href="styles.css?v=20261116-estudios-proyectos">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -32,6 +32,7 @@
       </button>
       <nav class="nav" id="nav-principal" aria-label="Navegación principal">
         <a href="#sobre-mi">Sobre mí</a>
+        <a href="#estudios">Estudios</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#difusion">Difusión</a>
         <a href="#herramientas">Herramientas</a>
@@ -51,7 +52,7 @@
           <p class="hero-role">Economista <span class="role-separator">/</span> Ciencia de Datos</p>
           <p class="hero-description">Economista dedicado a la investigación aplicada y al análisis de políticas públicas, con experiencia en el ámbito educativo. Combino econometría, ciencia de datos y aprendizaje automático para desarrollar modelos predictivos, analizar resultados y transformar información compleja en evidencia útil para la toma de decisiones.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#proyectos">Explorar mi trabajo <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#estudios">Explorar mi trabajo <span aria-hidden="true">↗</span></a>
             <a class="button button-quiet" href="#sobre-mi">Conóceme <span aria-hidden="true">↓</span></a>
           </div>
           <div class="hero-bottom"><span class="pulse"></span> INVESTIGACIÓN APLICADA · ANÁLISIS DE DATOS · VISUALIZACIÓN</div>
@@ -65,7 +66,7 @@
           </div>
         </div>
       </div>
-      <div class="container hero-index"><span>SCROLL PARA EXPLORAR</span><span class="scroll-line"></span><span>01 — 07</span></div>
+      <div class="container hero-index"><span>SCROLL PARA EXPLORAR</span><span class="scroll-line"></span><span>01 — 08</span></div>
     </section>
 
     <section class="section section-about" id="sobre-mi">
@@ -83,9 +84,15 @@
     </section>
 
 
-    <section class="section section-work" id="proyectos">
+    <section class="section section-work section-studies" id="estudios">
       <div class="container">
-        <div class="section-heading"><div><p class="section-kicker"><span>02.</span> PORTAFOLIO</p><h2>Estudios y <em>proyectos</em></h2></div><p>Estudios publicados, análisis independientes y proyectos de programación.</p></div>
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker"><span>02.</span> INVESTIGACIONES</p>
+            <h2>Estudios <em>publicados.</em></h2>
+          </div>
+          <p>Investigaciones realizadas en colaboración y publicadas en el Repositorio del Ministerio de Educación.</p>
+        </div>
         <div class="projects-grid">
           <article class="project-card project-primary">
             <div class="project-art project-art-cover">
@@ -124,45 +131,6 @@
               <div class="project-tools"><span>Beca 18</span> <i></i> <span>Migración educativa</span> <i></i> <span>Métodos mixtos</span></div>
               <p class="project-authorship">Coautor: César Huamaní, junto con Ana Claudia Salas Zeta y Camilo José Quintana-Castro.</p>
               <a class="project-publication-link" href="https://repositorio.minedu.gob.pe/handle/20.500.12799/10789" target="_blank" rel="noopener noreferrer" aria-label="Ver Estudio 006 publicado en el Repositorio del Ministerio de Educación (se abre en otra pestaña)">Ver publicación completa <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-          <article class="project-card project-independent">
-            <div class="project-art project-art-election">
-              <img src="assets/elecciones-costos-multas.svg" alt="Gráfico del análisis electoral 2021: multas potenciales de S/ 1 031 millones frente a un presupuesto electoral de S/ 804 millones; no es recaudación efectiva" loading="lazy" width="780" height="440">
-            </div>
-            <div class="project-content">
-              <div class="project-meta"><span>ANÁLISIS INDEPENDIENTE</span><span>PROYECTO EN R</span></div>
-              <h3>¿Se pagan solas las elecciones en el Perú? Un análisis de costos y multas electorales</h3>
-              <p>Compara el presupuesto de las Elecciones Generales de 2021 con la recaudación máxima potencial por multas de inasistencia. Examina diferencias territoriales y por nivel de pobreza, y simula escenarios para 2026. Los montos estimados no equivalen a recaudación efectiva.</p>
-              <div class="project-tools"><span>Economía pública</span> <i></i> <span>R</span> <i></i> <span>Simulaciones</span></div>
-              <p class="project-authorship">Análisis personal de César Anderson Huamaní Ninahuanca, con datos y código disponibles en GitHub.</p>
-              <a class="project-publication-link" href="https://github.com/CesarAHN/se-pagan-solas-las-elecciones-en-el-peru-un-analisis-de-costos-y-multas-electorales" target="_blank" rel="noopener noreferrer" aria-label="Consultar análisis y código en GitHub (se abre en otra pestaña)">Ver análisis y código <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-          <article class="project-card project-datametria">
-            <div class="project-art project-art-datametria">
-              <img src="assets/datametria-r.svg" alt="Ilustración original del paquete Datametría: consola de R y curva de densidad estadística con divisiones por cuantiles" loading="lazy" width="780" height="440">
-            </div>
-            <div class="project-content">
-              <div class="project-meta"><span>DESARROLLO DE SOFTWARE</span><span>PAQUETE R · V0.1</span></div>
-              <h3>Datametría — Paquete de herramientas estadísticas en R</h3>
-              <p>Paquete de R con funciones para limpieza y transformación de datos, estadísticos descriptivos, detección de valores atípicos, gráficos de densidad por cuantiles y descarga de series económicas del BCRP.</p>
-              <div class="project-tools"><span>R</span> <i></i> <span>Estadística</span> <i></i> <span>Procesamiento de datos</span></div>
-              <p class="project-authorship">Proyecto de desarrollo propio de César Anderson Huamaní Ninahuanca, con código y ejemplos de uso disponibles en GitHub.</p>
-              <a class="project-publication-link" href="https://github.com/CesarAHN/datametria" target="_blank" rel="noopener noreferrer" aria-label="Ver paquete Datametría y su código en GitHub (se abre en otra pestaña)">Ver paquete y código <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-          <article class="project-card project-worldcup">
-            <div class="project-art project-art-worldcup">
-              <img src="assets/eliminatorias-montecarlo.svg" alt="Ilustración original de un balón de fútbol y una gráfica de distribuciones de probabilidad, con la etiqueta 50 000 simulaciones de Monte Carlo" loading="lazy" width="780" height="440">
-            </div>
-            <div class="project-content">
-              <div class="project-meta"><span>SIMULACIÓN ESTADÍSTICA</span><span>MARZO 2025</span></div>
-              <h3>Probabilidades de clasificación al Mundial 2026: eliminatorias sudamericanas</h3>
-              <p>Estimación de las probabilidades de clasificación directa, repechaje y posición final de las selecciones sudamericanas mediante 50 000 simulaciones de Monte Carlo en R, con escenarios de resultados y supuestos de desempeño como local y visitante.</p>
-              <div class="project-tools"><span>R</span> <i></i> <span>Monte Carlo</span> <i></i> <span>Probabilidades</span></div>
-              <p class="project-authorship">Análisis personal de César Anderson Huamaní Ninahuanca, basado en la situación de las eliminatorias al 25 de marzo de 2025. Es una simulación histórica, no un pronóstico vigente.</p>
-              <a class="project-publication-link" href="https://github.com/CesarAHN/probabilidades-eliminatorias-sudamerica-mundial-2026" target="_blank" rel="noopener noreferrer" aria-label="Ver análisis probabilístico y código de simulación en GitHub (se abre en otra pestaña)">Ver simulación y código <span aria-hidden="true">↗</span></a>
             </div>
           </article>
           <article class="project-card project-study-employment">
@@ -205,7 +173,61 @@
             </div>
           </article>
         </div>
-        <p class="projects-note">Cuatro estudios de investigación y dos estudios descriptivos publicados en el Repositorio del Ministerio de Educación, además de tres proyectos personales disponibles en GitHub.</p>
+        <p class="projects-note">Cuatro estudios de investigación y dos estudios descriptivos publicados.</p>
+      </div>
+    </section>
+
+    <section class="section section-work section-projects" id="proyectos">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker"><span>03.</span> PROYECTOS</p>
+            <h2>Proyectos <em>personales.</em></h2>
+          </div>
+          <p>Análisis independientes, programación y simulaciones desarrollados por iniciativa propia.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card project-independent">
+            <div class="project-art project-art-election">
+              <img src="assets/elecciones-costos-multas.svg" alt="Gráfico del análisis electoral 2021: multas potenciales de S/ 1 031 millones frente a un presupuesto electoral de S/ 804 millones; no es recaudación efectiva" loading="lazy" width="780" height="440">
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>ANÁLISIS INDEPENDIENTE</span><span>PROYECTO EN R</span></div>
+              <h3>¿Se pagan solas las elecciones en el Perú? Un análisis de costos y multas electorales</h3>
+              <p>Compara el presupuesto de las Elecciones Generales de 2021 con la recaudación máxima potencial por multas de inasistencia. Examina diferencias territoriales y por nivel de pobreza, y simula escenarios para 2026. Los montos estimados no equivalen a recaudación efectiva.</p>
+              <div class="project-tools"><span>Economía pública</span> <i></i> <span>R</span> <i></i> <span>Simulaciones</span></div>
+              <p class="project-authorship">Análisis personal de César Anderson Huamaní Ninahuanca, con datos y código disponibles en GitHub.</p>
+              <a class="project-publication-link" href="https://github.com/CesarAHN/se-pagan-solas-las-elecciones-en-el-peru-un-analisis-de-costos-y-multas-electorales" target="_blank" rel="noopener noreferrer" aria-label="Consultar análisis y código en GitHub (se abre en otra pestaña)">Ver análisis y código <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card project-datametria">
+            <div class="project-art project-art-datametria">
+              <img src="assets/datametria-r.svg" alt="Ilustración original del paquete Datametría: consola de R y curva de densidad estadística con divisiones por cuantiles" loading="lazy" width="780" height="440">
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>DESARROLLO DE SOFTWARE</span><span>PAQUETE R · V0.1</span></div>
+              <h3>Datametría — Paquete de herramientas estadísticas en R</h3>
+              <p>Paquete de R con funciones para limpieza y transformación de datos, estadísticos descriptivos, detección de valores atípicos, gráficos de densidad por cuantiles y descarga de series económicas del BCRP.</p>
+              <div class="project-tools"><span>R</span> <i></i> <span>Estadística</span> <i></i> <span>Procesamiento de datos</span></div>
+              <p class="project-authorship">Proyecto de desarrollo propio de César Anderson Huamaní Ninahuanca, con código y ejemplos de uso disponibles en GitHub.</p>
+              <a class="project-publication-link" href="https://github.com/CesarAHN/datametria" target="_blank" rel="noopener noreferrer" aria-label="Ver paquete Datametría y su código en GitHub (se abre en otra pestaña)">Ver paquete y código <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card project-worldcup">
+            <div class="project-art project-art-worldcup">
+              <img src="assets/eliminatorias-montecarlo.svg" alt="Ilustración original de un balón de fútbol y una gráfica de distribuciones de probabilidad, con la etiqueta 50 000 simulaciones de Monte Carlo" loading="lazy" width="780" height="440">
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>SIMULACIÓN ESTADÍSTICA</span><span>MARZO 2025</span></div>
+              <h3>Probabilidades de clasificación al Mundial 2026: eliminatorias sudamericanas</h3>
+              <p>Estimación de las probabilidades de clasificación directa, repechaje y posición final de las selecciones sudamericanas mediante 50 000 simulaciones de Monte Carlo en R, con escenarios de resultados y supuestos de desempeño como local y visitante.</p>
+              <div class="project-tools"><span>R</span> <i></i> <span>Monte Carlo</span> <i></i> <span>Probabilidades</span></div>
+              <p class="project-authorship">Análisis personal de César Anderson Huamaní Ninahuanca, basado en la situación de las eliminatorias al 25 de marzo de 2025. Es una simulación histórica, no un pronóstico vigente.</p>
+              <a class="project-publication-link" href="https://github.com/CesarAHN/probabilidades-eliminatorias-sudamerica-mundial-2026" target="_blank" rel="noopener noreferrer" aria-label="Ver análisis probabilístico y código de simulación en GitHub (se abre en otra pestaña)">Ver simulación y código <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="projects-note">Tres proyectos personales con documentación y código disponibles en GitHub.</p>
       </div>
     </section>
 
@@ -214,7 +236,7 @@
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="section-kicker"><span>03.</span> DIFUSIÓN DE INVESTIGACIONES</p>
+            <p class="section-kicker"><span>04.</span> DIFUSIÓN DE INVESTIGACIONES</p>
             <h2 id="difusion-title">Presentaciones de <em>investigaciones</em></h2>
           </div>
           <p>Investigaciones presentadas en seminarios y otros encuentros académicos.</p>
@@ -242,7 +264,7 @@
 
     <section class="section section-tools" id="herramientas">
       <div class="container tools-grid">
-        <div><p class="section-kicker"><span>04.</span> HERRAMIENTAS</p><h2>Mi espacio de <em>trabajo.</em></h2><p>Tecnologías y métodos que utilizo en mis proyectos de investigación y análisis de datos.</p></div>
+        <div><p class="section-kicker"><span>05.</span> HERRAMIENTAS</p><h2>Mi espacio de <em>trabajo.</em></h2><p>Tecnologías y métodos que utilizo en mis proyectos de investigación y análisis de datos.</p></div>
         <div class="tool-categories" aria-label="Tecnologías, métodos y competencias">
           <div class="tool-category">
             <h3>PROGRAMACIÓN Y TECNOLOGÍAS</h3>
@@ -260,7 +282,7 @@
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="section-kicker"><span>05.</span> EXPERIENCIA</p>
+            <p class="section-kicker"><span>06.</span> EXPERIENCIA</p>
             <h2 id="experiencia-title">Experiencia <em>profesional.</em></h2>
           </div>
           <p>Funciones desarrolladas en instituciones públicas, con énfasis en investigación económica y análisis de datos.</p>
@@ -285,12 +307,12 @@
     <section class="section section-reading" id="lecturas">
       <div class="container reading-panel">
         <div class="reading-ornament" aria-hidden="true">“</div>
-        <div><p class="section-kicker"><span>06.</span> MÁS ALLÁ DE LOS DATOS</p><h2>También pienso<br><em>a través de los libros.</em></h2><p>Estoy preparando un espacio independiente para publicar reflexiones personales sobre literatura, personajes e ideas que merecen seguir conversándose después de cerrar el libro.</p><span class="coming-soon">PRÓXIMAMENTE · REFLEXIONES LITERARIAS</span></div>
+        <div><p class="section-kicker"><span>07.</span> MÁS ALLÁ DE LOS DATOS</p><h2>También pienso<br><em>a través de los libros.</em></h2><p>Estoy preparando un espacio independiente para publicar reflexiones personales sobre literatura, personajes e ideas que merecen seguir conversándose después de cerrar el libro.</p><span class="coming-soon">PRÓXIMAMENTE · REFLEXIONES LITERARIAS</span></div>
         <div class="reading-symbol" aria-hidden="true"><svg viewBox="0 0 190 190" fill="none"><path d="M95 151c-19-17-40-22-72-19V41c30-3 52 3 72 19 20-16 42-22 72-19v91c-32-3-53 2-72 19Z" stroke="currentColor" stroke-width="2.5"/><path d="M95 60v91M38 66c18-1 32 3 43 11M38 87c18-1 32 3 43 11m28-21c11-8 25-12 43-11m-43 32c11-8 25-12 43-11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
       </div>
     </section>
 
-    <section class="section contact" id="contacto"><div class="container contact-grid"><div><p class="section-kicker"><span>07.</span> CONECTEMOS</p><h2>Para consultas y<br><em>colaboraciones.</em></h2><p>Para consultas profesionales o colaboraciones, puedes escribirme por correo electrónico o explorar mis proyectos en GitHub.</p></div><div class="contact-action"><a href="mailto:pe.cesar.huamani.n@uni.pe" class="button button-primary">Enviar correo <span aria-hidden="true">↗</span></a><a href="mailto:pe.cesar.huamani.n@uni.pe" class="contact-email">pe.cesar.huamani.n@uni.pe</a><a href="https://github.com/CesarAHN" target="_blank" rel="noopener noreferrer" class="button button-quiet">Mi perfil en GitHub <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="section contact" id="contacto"><div class="container contact-grid"><div><p class="section-kicker"><span>08.</span> CONECTEMOS</p><h2>Para consultas y<br><em>colaboraciones.</em></h2><p>Para consultas profesionales o colaboraciones, puedes escribirme por correo electrónico o explorar mis proyectos en GitHub.</p></div><div class="contact-action"><a href="mailto:pe.cesar.huamani.n@uni.pe" class="button button-primary">Enviar correo <span aria-hidden="true">↗</span></a><a href="mailto:pe.cesar.huamani.n@uni.pe" class="contact-email">pe.cesar.huamani.n@uni.pe</a><a href="https://github.com/CesarAHN" target="_blank" rel="noopener noreferrer" class="button button-quiet">Mi perfil en GitHub <span aria-hidden="true">↗</span></a></div></div></section>
   </main>
   <footer class="footer"><div class="container footer-inner"><div><span class="footer-brand">CH<span>.</span></span><span>Economía · Datos · Investigación</span></div><p>© <span id="year">2026</span> César Anderson Huamaní Ninahuanca. Sitio personal.</p><a href="#top">Volver arriba ↑</a></div></footer>
 </body>
