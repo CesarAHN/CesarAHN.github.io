@@ -4,7 +4,7 @@
 /* Portada: nombre legible, sólido y distribuido en tres líneas. */
 .hero h1.hero-name {
   font-family: var(--display);
-  font-size: clamp(46px, 4.8vw, 69px);
+  font-size: clamp(50px, 5.15vw, 75px);
   font-weight: 800;
   line-height: 1.18;
   letter-spacing: -.05em;
@@ -39,11 +39,11 @@
   -webkit-text-stroke: 0 transparent;
 }
 @media(max-width:1050px) {
-  .hero h1.hero-name{font-size:clamp(40px,4.8vw,58px)}
+  .hero h1.hero-name{font-size:clamp(43px,5.15vw,63px)}
 }
 @media(max-width:760px) {
-  .hero h1.hero-name{font-size:clamp(40px,8.8vw,61px);margin-top:30px}
+  .hero h1.hero-name{font-size:clamp(42px,9.2vw,65px);margin-top:30px}
 }
 @media(max-width:420px) {
-  .hero h1.hero-name{font-size:clamp(34px,9vw,43px)}
+  .hero h1.hero-name{font-size:clamp(35px,9.4vw,45px)}
 }
