@@ -32,7 +32,7 @@
 }
 .hero h1.hero-name > .name-last {
   font-size: 1em;
-  color: #eaf1f5;
+  color: #77e1c3;
 }
 .hero h1.hero-name .period {
   color: var(--accent);
