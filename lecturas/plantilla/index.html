@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24443c">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Vista previa de la plantilla editorial para Reflexiones literarias. No es una crítica publicada.">
+  <title>Plantilla de artículo · Reflexiones literarias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--bg:#e6e8df;--paper:#f6f7f0;--forest:#24443c;--ink:#243b36;--rust:#9b5b36;--muted:#61756d;--line:#b8c6bb;--sans:"DM Sans",system-ui,sans-serif;--serif:"Libre Baskerville",Georgia,serif}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;line-height:1.7}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible{outline:3px solid var(--rust);outline-offset:4px}
+    .wrap{width:min(calc(100% - 56px),1080px);margin-inline:auto}
+    .skip{position:fixed;top:-80px;left:20px;background:var(--forest);color:white;padding:10px;z-index:20}
+    .skip:focus{top:10px}
+    .top{background:var(--bg);border-bottom:1px solid var(--line)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:82px}
+    .brand{font:700 clamp(17px,2.3vw,25px)/1.2 var(--serif);letter-spacing:-.06em;color:var(--forest)}
+    .brand span{color:var(--rust)}
+    .topnav{display:flex;gap:20px;align-items:center;font:700 12px var(--sans);color:#526a60}
+    .topnav a:hover{color:var(--rust)}
+    .notice{background:#f1e9dd;color:#765039;border-bottom:1px solid #dfcbb5;padding:11px 0;font-size:11px;font-weight:600;line-height:1.6}
+    .article-hero{position:relative;overflow:hidden;background:var(--forest);color:#f1f2e9}
+    .article-hero::before,.article-hero::after{content:"";position:absolute;border:1px solid #90b8a078;border-radius:50%;pointer-events:none}
+    .article-hero::before{width:450px;height:450px;top:-210px;right:-145px}
+    .article-hero::after{width:300px;height:300px;top:-130px;right:-63px;opacity:.7}
+    .hero-inner{position:relative;z-index:1;padding:70px 0 73px}
+    .overline{font:700 10px/1.8 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#e5b899}
+    .article-hero h1{font:400 clamp(45px,6.2vw,82px)/1.14 var(--serif);letter-spacing:-.06em;max-width:850px;margin:18px 0 17px}
+    .article-hero h1 em{color:#deb195;font-weight:400}
+    .hero-desc{font:400 clamp(15px,1.7vw,19px)/1.8 var(--serif);color:#d2dfd4;max-width:750px;margin:0 0 23px}
+    .byline{display:flex;gap:13px;flex-wrap:wrap;align-items:center;font:600 11px/1.7 var(--sans);color:#c2d2c5}
+    .byline .sep{color:#87ab93}
+    .reading-layout{display:grid;grid-template-columns:minmax(0,1fr) 245px;gap:clamp(30px,5vw,80px);padding:68px 0 80px;align-items:start}
+    .prose{max-width:710px;font:400 clamp(15px,1.55vw,17px)/2.07 var(--serif);color:#344b40}
+    .prose p{margin:0 0 26px}
+    .prose p:first-child:first-letter{font-size:3.2em;float:left;line-height:.85;color:var(--rust);padding:8px 10px 0 0}
+    .prose blockquote{border-left:3px solid var(--rust);background:#dce5d9;margin:34px 0;padding:23px 25px 18px}
+    .prose blockquote p{font:italic 400 clamp(16px,1.8vw,20px)/1.7 var(--serif);margin:0 0 12px;color:var(--forest)}
+    .prose blockquote cite{display:block;font:600 10px/1.8 var(--sans);color:#6a7c6c;font-style:normal}
+    .prose .inline-quote{color:#7f4a31;font-style:italic}
+    .prose .separation{width:45px;height:1px;background:#aebdab;margin:30px 0}
+    .prose .ending{font-style:italic;color:#577365}
+    .aside{position:sticky;top:24px;border:1px solid var(--line);background:#d7e2d5;padding:25px 22px}
+    .aside-label{font:700 10px var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--rust)}
+    .aside h2{font:400 26px/1.22 var(--serif);letter-spacing:-.035em;color:var(--forest);margin:13px 0 20px}
+    .info-row{border-top:1px solid #b4c6b6;padding:12px 0}
+    .info-row dt{font:700 9px/1.5 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:#738876;margin:0 0 4px}
+    .info-row dd{font:500 12px/1.8 var(--sans);color:#345143;margin:0}
+    .aside-foot{font:400 11px/1.8 var(--sans);color:#64796b;margin:17px 0 0}
+    .end-links{border-top:1px solid var(--line);padding:25px 0 35px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .end-links a{font:700 12px var(--sans);color:var(--forest);border-bottom:1px solid var(--rust);padding-bottom:6px}
+    .footer{background:var(--forest);color:#c9d7cd;padding:28px 0;font:500 11px var(--sans)}
+    .footer-inner{display:flex;justify-content:space-between;gap:18px}
+    .footer a{color:#f4c6a6}
+    @media(max-width:760px){
+      .wrap{width:min(calc(100% - 36px),1080px)}
+      .top-inner{padding:18px 0;min-height:unset;align-items:start}
+      .topnav{font-size:11px;gap:10px}
+      .hero-inner{padding:48px 0 53px}
+      .article-hero::before{width:250px;height:250px;top:-150px;right:-120px}
+      .article-hero::after{width:160px;height:160px;top:-90px;right:-65px}
+      .article-hero h1{font-size:clamp(38px,8vw,61px);line-height:1.19}
+      .reading-layout{grid-template-columns:1fr;gap:23px;padding:40px 0 45px}
+      .prose{font-size:15px;line-height:2}
+      .aside{position:static;grid-row:1;padding:19px 20px}
+      .aside h2{font-size:21px;margin:8px 0 14px}
+      .aside .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 15px}
+      .aside .info-row{padding:9px 0}
+      .aside-foot{margin-top:8px}
+      .footer-inner{flex-direction:column}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al artículo</a>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a href="../" class="brand" aria-label="Volver a Reflexiones literarias">Reflexiones <span>literarias</span></a>
+      <nav class="topnav" aria-label="Navegación del blog">
+        <a href="../">Inicio</a>
+        <a href="../#lecturas">Libros leídos</a>
+      </nav>
+    </div>
+  </header>
+  <div class="notice"><div class="wrap">VISTA PREVIA DE DISEÑO · Esta página es una plantilla de muestra, no una crítica publicada.</div></div>
+  <main id="contenido">
+    <section class="article-hero">
+      <div class="wrap hero-inner">
+        <div class="overline">Novela / Lectura comentada</div>
+        <h1>Entre el cielo <em>y el suelo.</em></h1>
+        <p class="hero-desc">Una página de ejemplo para mostrar cómo convivirán la narración de la obra, sus fragmentos y una interpretación personal.</p>
+        <div class="byline"><span>Obra de Lorenzo Helguero</span><span class="sep" aria-hidden="true">·</span><span>Lectura de César Huamaní</span></div>
+      </div>
+    </section>
+    <div class="wrap reading-layout">
+      <article class="prose" aria-label="Ejemplo de desarrollo de una entrada literaria">
+        <p>[Aquí comenzará el relato de la obra, contando el episodio o conflicto que hayas decidido comentar]. La narración no se interrumpirá para abrir una sección de «resumen»: será el propio desarrollo de los acontecimientos el que permita introducir tus preguntas, observaciones y valoraciones.</p>
+        <p>Cuando un pasaje sea importante para comprender una escena, podrás incorporar una <span class="inline-quote">«cita breve y verificada del libro»</span> en medio del párrafo. A continuación seguirás con tu propio razonamiento, explicando qué te llama la atención de esas palabras, qué sugieren y por qué resultan significativas para tu lectura.</p>
+        <blockquote>
+          <p>«Aquí irá un fragmento breve, literal y verificado de la edición que utilizaste».</p>
+          <cite>OBRA · EDICIÓN Y PÁGINA POR CONFIRMAR</cite>
+        </blockquote>
+        <p>[Aquí continuarás narrando lo que sucede después, enlazándolo con la cita anterior]. Si una decisión de un personaje te parece contradictoria, podrás detenerte a argumentarlo; si un episodio modifica tu interpretación, lo contarás en el mismo hilo del texto. La crítica se construirá mientras avanzas por la historia.</p>
+        <p>[Aquí podrás incorporar otro episodio, otra cita breve y otra reflexión]. No habrá apartados fijos de «Personajes», «Crítica» o «Conclusiones». Solo aparecerán subtítulos cuando tú consideres que realmente ayudan a la lectura.</p>
+        <div class="separation" aria-hidden="true"></div>
+        <p class="ending">[El cierre podrá ser una última impresión o pregunta sobre la obra, sin necesidad de una conclusión formal].</p>
+      </article>
+      <aside class="aside" aria-label="Ficha del libro">
+        <div class="aside-label">Ficha de la obra</div>
+        <h2>Entre el cielo y el suelo</h2>
+        <dl class="info-grid">
+          <div class="info-row"><dt>Autor</dt><dd>Lorenzo Helguero</dd></div>
+          <div class="info-row"><dt>Tipo de obra</dt><dd>Novela</dd></div>
+          <div class="info-row"><dt>Edición consultada</dt><dd>Por confirmar</dd></div>
+          <div class="info-row"><dt>Texto</dt><dd>Ejemplo de plantilla, no publicado</dd></div>
+        </dl>
+        <p class="aside-foot">La ficha es informativa. El comentario literario se lee como un texto continuo.</p>
+      </aside>
+    </div>
+    <div class="wrap end-links"><a href="../">← Volver al blog</a><a href="../#lecturas">Explorar lecturas ↗</a></div>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year">2026</span> · Reflexiones literarias · César Huamaní</span><a href="../../">Portafolio profesional ↗</a></div></footer>
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>

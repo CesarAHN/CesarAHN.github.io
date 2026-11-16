@@ -127,6 +127,9 @@
       .footer-inner{flex-direction:column;align-items:flex-start;gap:9px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-action,.book-row{transition:none}}
+    /* Enlace de vista previa editorial */
+    .preview-link{display:inline-flex;align-items:center;gap:15px;margin-top:17px;padding-bottom:7px;border-bottom:1px solid var(--rust);color:var(--forest);font-size:11px;font-weight:700;letter-spacing:.045em;transition:gap .2s}
+    .preview-link:hover{gap:22px}
   </style>
 </head>
 <body>
@@ -161,15 +164,16 @@
       <div class="container">
         <div class="section-head">
           <div><p class="section-label">01 / EL BLOG</p><h2 class="section-title" id="titulo-escritos">Últimos escritos.</h2></div>
-          <p class="section-note">Aquí aparecerán los artículos cuando estén terminados: resúmenes y críticas, cada uno con su propia página.</p>
+          <p class="section-note">Cada entrada contará la obra y entrelazará citas breves con mis opiniones e interpretaciones, sin dividirlas en capítulos obligatorios.</p>
         </div>
         <div class="writing-area">
           <div>
             <span class="aside-label">Archivo en construcción</span>
             <h3>La primera entrada está por escribirse.</h3>
-            <p>Este blog acaba de comenzar. Las reflexiones se publicarán después de ser redactadas y revisadas, sin presentar como terminadas notas que todavía están en preparación.</p>
+            <p>Mis artículos seguirán el hilo de cada obra: narración, fragmentos del libro y juicios personales dentro de un mismo texto. Antes de publicar la primera crítica, ya puedes explorar cómo se leerá.</p>
+            <a class="preview-link" href="plantilla/">Ver diseño de una entrada <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="marker" aria-hidden="true">B.</div>
+          <div class="marker" aria-hidden="true">R.</div>
         </div>
       </div>
     </section>
