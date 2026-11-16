@@ -233,3 +233,35 @@
 @media(max-width:760px) {
   .project-datametria .project-art-datametria {height:255px;padding:16px}
 }
+
+/* Sexta tarjeta: simulación probabilística de las eliminatorias sudamericanas. */
+.project-worldcup .project-art-worldcup {
+  height:285px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:17px;
+  background:radial-gradient(circle at center,#214662 0%,#10283b 63%,#0b1e2c 100%);
+}
+.project-worldcup .project-art-worldcup img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  filter:drop-shadow(0 10px 17px rgba(0,0,0,.22));
+}
+.project-worldcup .project-content h3 {
+  font-size:18px;
+  line-height:1.4;
+  overflow-wrap:break-word;
+}
+.project-worldcup .project-authorship {
+  font-size:11px;
+  line-height:1.65;
+  color:#9cb5c3;
+  margin:16px 0;
+  min-height:0;
+}
+@media(max-width:760px) {
+  .project-worldcup .project-art-worldcup { height:255px; padding:16px }
+}
