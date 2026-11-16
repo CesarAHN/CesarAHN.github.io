@@ -265,3 +265,36 @@
 @media(max-width:760px) {
   .project-worldcup .project-art-worldcup { height:255px; padding:16px }
 }
+
+/* Estudio 012: portada original de inserción laboral, sin recortes. */
+.project-study-employment .project-art-cover {
+  height:285px;
+  padding:17px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:radial-gradient(circle at center,#214662 0%,#10283b 63%,#0b1e2c 100%);
+}
+.project-study-employment .project-art-cover img {
+  display:block;
+  height:100%;
+  width:auto;
+  max-width:100%;
+  object-fit:contain;
+  box-shadow:0 15px 32px rgba(0,0,0,.32);
+}
+.project-study-employment .project-content h3 {
+  font-size:18px;
+  line-height:1.4;
+  overflow-wrap:break-word;
+}
+.project-study-employment .project-authorship {
+  font-size:11px;
+  line-height:1.65;
+  color:#9cb5c3;
+  margin:16px 0;
+  min-height:0;
+}
+@media(max-width:760px) {
+  .project-study-employment .project-art-cover { height:255px; padding:16px; }
+}
