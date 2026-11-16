@@ -420,3 +420,15 @@
   .nav a {font-size:10px;}
   .nav .nav-contact {padding:10px 12px;}
 }
+
+/* Categorías de Mi espacio de trabajo */
+.section-tools .tool-categories {display:flex;flex-direction:column;gap:29px;min-width:0;}
+.section-tools .tool-category h3 {margin:0 0 12px;color:var(--accent);font:800 11px/1.55 var(--font);letter-spacing:.12em;}
+.section-tools .tool-category + .tool-category {border-top:1px solid var(--line);padding-top:25px;}
+.section-tools .tool-list {gap:10px;}
+.section-tools .tool-list span {padding:12px 17px;font-size:12px;line-height:1.55;}
+@media(max-width:760px){
+  .section-tools .tool-categories {gap:21px;}
+  .section-tools .tool-category + .tool-category {padding-top:21px;}
+  .section-tools .tool-list span {padding:10px 13px;}
+}
