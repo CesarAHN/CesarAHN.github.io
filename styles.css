@@ -433,73 +433,34 @@
   .section-tools .tool-list span {padding:10px 13px;}
 }
 
-/* Trayectoria laboral — experiencia profesional */
+/* Experiencia profesional: instituciones y funciones */
 .section-experience {
   background:linear-gradient(160deg,#0f1d2c 0%,#101f2f 100%);
   border-bottom:1px solid var(--line);
 }
-.experience-list {
-  border-top:1px solid #365065;
-}
-.experience-item {
+.section-experience .experience-list {border-top:1px solid #365065;}
+.section-experience .experience-item {
   display:grid;
-  grid-template-columns:minmax(150px,205px) minmax(0,1fr);
+  grid-template-columns:minmax(175px,255px) minmax(0,1fr);
   gap:34px;
   padding:31px 10px 33px 0;
   border-bottom:1px solid #304759;
+  align-items:start;
 }
-.experience-period {
-  display:flex;
-  flex-direction:column;
-  gap:4px;
-  padding:5px 0 0 20px;
-  border-left:2px solid #456377;
-  color:#b4c8d3;
-  font:800 11px/1.7 var(--font);
-  letter-spacing:.08em;
-}
-.experience-present .experience-period {
-  border-color:var(--accent);
+.section-experience .experience-institution {
   color:var(--accent2);
+  font:800 clamp(14px,1.4vw,17px)/1.5 var(--display);
+  letter-spacing:.015em;
+  margin:0;
 }
-.experience-identity {
-  display:flex;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:14px;
-  margin:0 0 10px;
-}
-.experience-institution {
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:.09em;
-  color:#8cdcc8;
-}
-.experience-current {
-  padding:4px 8px;
-  border:1px solid #548f83;
-  border-radius:2px;
-  font-size:9px;
-  letter-spacing:.09em;
-  font-weight:800;
-  color:#8ce8cc;
-}
-.experience-details h3 {
-  font:800 clamp(19px,2vw,23px)/1.4 var(--display);
-  letter-spacing:-.028em;
-  margin:0 0 11px;
-}
-.experience-details p {
+.section-experience .experience-item p {
   color:var(--muted);
   font-size:14px;
   line-height:1.85;
-  max-width:760px;
+  max-width:750px;
   margin:0;
 }
-@media(max-width:760px){
-  .experience-item {grid-template-columns:1fr;gap:14px;padding:27px 0;}
-  .experience-period {padding-left:12px;flex-direction:row;flex-wrap:wrap;gap:8px;align-items:center;}
-  .experience-period time + time::before {content:"—";margin-right:8px;color:#6f899b;}
-  .experience-details h3 {font-size:20px;}
-  .experience-details p {font-size:13px;}
+@media(max-width:760px) {
+  .section-experience .experience-item {grid-template-columns:1fr;gap:10px;padding:25px 0;}
+  .section-experience .experience-item p {font-size:13px;}
 }
