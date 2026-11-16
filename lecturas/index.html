@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#181713">
+  <meta name="description" content="Reflexiones literarias de César Huamaní: biblioteca personal, resúmenes de obras, interpretación de personajes, críticas y apuntes de lectura.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reflexiones literarias | Cuaderno de lecturas de César Huamaní">
+  <meta property="og:description" content="Leer. Sentir. Pensar. Una biblioteca personal de lecturas, resúmenes y críticas.">
+  <meta property="og:url" content="https://cesarahn.github.io/lecturas/">
+  <link rel="canonical" href="https://cesarahn.github.io/lecturas/">
+  <title>Reflexiones literarias — Cuaderno de lecturas | César Huamaní</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#181713;--bg2:#1e1c18;--panel:#24221e;--panel2:#2b2822;--text:#f4efe6;--muted:#bcb3a5;--gold:#d7b985;--gold2:#ebd4aa;--line:#484036;--max:1140px;--serif:"Cormorant Garamond",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.75;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible{outline:2px solid var(--gold2);outline-offset:5px}
+    ::selection{background:var(--gold);color:#171411}
+    .container{width:min(calc(100% - 64px),var(--max));margin-inline:auto}
+    .skip{position:fixed;top:-70px;left:18px;z-index:80;background:var(--gold);color:#171411;padding:9px 15px}
+    .skip:focus{top:12px}
+    .site-header{position:sticky;top:0;z-index:20;background:rgba(24,23,19,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;min-height:83px;gap:30px}
+    .identity{display:inline-flex;align-items:center;gap:13px;white-space:nowrap;font:600 22px/1 var(--serif)}
+    .identity-mark{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--gold);font:italic 26px/1 var(--serif);color:var(--gold)}
+    .nav{display:flex;gap:clamp(12px,2.3vw,30px);align-items:center;flex-wrap:wrap}
+    .nav a{font-size:11px;font-weight:700;color:#c5bbad;white-space:nowrap;transition:color .2s}
+    .nav a:hover,.nav a:focus-visible{color:var(--gold2)}
+    .nav .nav-back{color:var(--gold);border-left:1px solid var(--line);padding-left:20px}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 77% 45%,#302a21 0,transparent 36%)}
+    .hero-inner{min-height:640px;display:grid;grid-template-columns:1.13fr .87fr;gap:clamp(30px,5vw,90px);align-items:center;padding:80px 0 85px}
+    .eyebrow,.kicker,.micro{font:700 10px/1.6 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+    .eyebrow{margin:0 0 25px}
+    .hero h1{font:500 clamp(76px,8.5vw,128px)/.88 var(--serif);letter-spacing:-.065em;margin:0 0 28px}
+    .hero h1 em{color:var(--gold);font-weight:400}
+    .hero .lead{color:#cec3b3;font:400 clamp(18px,2vw,23px)/1.52 var(--serif);max-width:575px;margin:0 0 30px}
+    .text-link{display:inline-flex;align-items:center;gap:18px;padding:0 0 8px;border-bottom:1px solid var(--gold);color:var(--gold2);font:700 11px var(--sans);letter-spacing:.07em;text-transform:uppercase;transition:gap .2s}
+    .text-link:hover{gap:25px}
+    .art{min-height:425px;position:relative;border:1px solid #675742;background:radial-gradient(ellipse at 48% 34%,#6c563b 0%,#3d3125 30%,#24211d 74%);display:grid;place-items:center;box-shadow:0 26px 60px #09080655}
+    .art:before,.art:after{content:"";position:absolute;width:70%;height:70%;border:1px solid #ac936d60;transform:rotate(-8deg)}
+    .art:after{width:64%;height:63%;transform:rotate(9deg);opacity:.7}
+    .art-letter{position:relative;z-index:1;font:italic 330px/.9 var(--serif);color:#efd6aa;text-shadow:12px 20px 35px #0008}
+    .art-caption{position:absolute;z-index:2;bottom:17px;left:18px;right:18px;text-align:right;font:700 9px var(--sans);letter-spacing:.18em;color:#e4cba2}
+    .intro-band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#201e19}
+    .intro-inner{display:grid;grid-template-columns:repeat(3,1fr)}
+    .intro-item{padding:29px 28px 30px 0}
+    .intro-item+.intro-item{border-left:1px solid var(--line);padding-left:32px}
+    .intro-index{display:block;font:700 10px var(--sans);letter-spacing:.2em;color:var(--gold);margin-bottom:11px}
+    .intro-item h2{font:500 29px/1 var(--serif);margin:0 0 7px}
+    .intro-item p{font:400 12px/1.8 var(--sans);color:var(--muted);margin:0;max-width:300px}
+    .section{padding:90px 0;border-bottom:1px solid var(--line)}
+    .section-heading{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:32px}
+    .kicker{margin:0 0 13px}
+    .section-heading h2,.essay-heading{font:500 clamp(43px,5vw,70px)/1 var(--serif);letter-spacing:-.035em;margin:0}
+    .section-heading h2 em{font-weight:400;color:var(--gold)}
+    .section-summary{max-width:425px;color:var(--muted);font:400 13px/1.9 var(--sans);margin:0 0 4px}
+    .book-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+    .book{display:grid;grid-template-columns:108px minmax(0,1fr);gap:18px;align-items:center;min-height:210px;padding:20px;border:1px solid var(--line);background:var(--panel);transition:border-color .2s,transform .2s}
+    .book:hover{border-color:#977d59;transform:translateY(-2px)}
+    .book-cover{height:153px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:6px 8px 17px #0005;border-left:6px solid #ffffff24;border-right:1px solid #ffffff18}
+    .book-cover::after{content:"";position:absolute;inset:8px;border:1px solid #ffffff48;opacity:.5}
+    .cover-letter{font:italic 78px/.9 var(--serif);color:#f0dfc6}
+    .cover-1{background:linear-gradient(145deg,#314452,#19252d)}
+    .cover-2{background:linear-gradient(145deg,#6d423c,#301e24)}
+    .cover-3{background:linear-gradient(145deg,#61523d,#302820)}
+    .cover-4{background:linear-gradient(145deg,#294e4c,#152f30)}
+    .cover-5{background:linear-gradient(145deg,#49425c,#282232)}
+    .cover-6{background:linear-gradient(145deg,#655346,#29251f)}
+    .book-kind{font:700 9px/1.5 var(--sans);letter-spacing:.11em;color:var(--gold);text-transform:uppercase;margin:0 0 10px}
+    .book h3{font:600 clamp(23px,2.5vw,31px)/.99 var(--serif);letter-spacing:-.02em;margin:0 0 11px;overflow-wrap:break-word}
+    .book-author{font:400 11px/1.65 var(--sans);color:#c9c0b4;margin:0}
+    .library-note{margin:20px 0 0;font:400 12px/1.85 var(--sans);color:var(--muted)}
+    .reading-method{background:var(--bg2)}
+    .method-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+    .method{background:var(--panel);border:1px solid var(--line);padding:36px}
+    .method .num{font:700 10px var(--sans);color:var(--gold);letter-spacing:.18em}
+    .method h3{font:500 clamp(28px,3vw,39px)/1.13 var(--serif);margin:15px 0 11px}
+    .method p{font:400 13px/1.9 var(--sans);color:var(--muted);margin:0;max-width:460px}
+    .method span.detail{display:inline-block;margin-top:22px;padding-top:12px;border-top:1px solid var(--line);font:600 10px/1.6 var(--sans);letter-spacing:.05em;color:#e2c79c}
+    .essay-section{background:#221f1b}
+    .essay-inner{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px}
+    .essay-heading{margin:12px 0 20px}
+    .essay-text{font:400 19px/1.65 var(--serif);color:#d1c5b5;margin:0;max-width:630px}
+    .essay-aside{border-left:1px solid #847258;padding:20px 0 20px 32px;color:#d6c7ae;font:italic 27px/1.4 var(--serif)}
+    .essay-aside small{display:block;margin-top:16px;font:700 9px/1.5 var(--sans);font-style:normal;color:var(--gold);letter-spacing:.16em;text-transform:uppercase}
+    .footer{padding:32px 0;display:flex;align-items:center;justify-content:space-between;gap:25px;color:var(--muted);font:500 11px/1.7 var(--sans)}
+    .footer a{color:var(--gold2)}
+    @media(max-width:1150px){.book{grid-template-columns:85px 1fr;gap:14px;padding:15px}.book-cover{height:131px}.book h3{font-size:24px}.nav{gap:15px}}
+    @media(max-width:940px){.header-inner{gap:17px;flex-wrap:wrap;padding-block:15px}.nav{justify-content:flex-start}.hero-inner{min-height:unset}.art{min-height:330px}.art-letter{font-size:250px}.book-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:700px){html{scroll-padding-top:130px}.container{width:min(calc(100% - 38px),var(--max))}.header-inner{align-items:start}.identity{font-size:21px}.nav{gap:9px 18px}.nav a{font-size:11px}.nav .nav-back{border:0;padding-left:0}.hero-inner{grid-template-columns:1fr;padding:72px 0;gap:38px}.hero h1{font-size:clamp(78px,17vw,113px)}.art{min-height:260px}.art-letter{font-size:200px}.intro-inner{grid-template-columns:1fr}.intro-item{padding:22px 0}.intro-item+.intro-item{border-left:0;border-top:1px solid var(--line);padding-left:0}.section{padding:70px 0}.section-heading{display:block}.section-summary{margin-top:17px}.book-grid,.method-grid,.essay-inner{grid-template-columns:1fr}.book{grid-template-columns:110px 1fr}.book-cover{height:153px}.method{padding:28px}.essay-inner{gap:25px}.essay-aside{font-size:24px}.footer{flex-direction:column;align-items:flex-start}}
+    @media(max-width:390px){.book{grid-template-columns:94px 1fr;gap:13px;padding:13px}.book-cover{height:132px}.book h3{font-size:23px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.book,.text-link{transition:none}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a href="#inicio" class="identity" aria-label="Reflexiones literarias, ir al inicio"><span class="identity-mark" aria-hidden="true">R</span>Reflexiones literarias</a>
+      <nav class="nav" aria-label="Navegación de lecturas">
+        <a href="#biblioteca">Biblioteca</a>
+        <a href="#resumenes">Resúmenes</a>
+        <a href="#criticas">Críticas</a>
+        <a href="#acerca">Sobre este espacio</a>
+        <a class="nav-back" href="/">← Portafolio profesional</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <div class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Cuaderno de lecturas / Archivo personal</p>
+          <h1>Leer.<br>Sentir.<br><em>Pensar.</em></h1>
+          <p class="lead">Un espacio para volver sobre las historias que dejan preguntas, explorar las contradicciones de sus personajes y escribir lo que permanece después de cerrar un libro.</p>
+          <a class="text-link" href="#biblioteca">Explorar la biblioteca <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="art" aria-hidden="true"><span class="art-letter">R</span><span class="art-caption">Literatura · Interpretación · Memoria</span></div>
+      </div>
+    </div>
+    <div class="intro-band" aria-label="Estructura del cuaderno literario">
+      <div class="container intro-inner">
+        <div class="intro-item"><span class="intro-index">01 / REGISTRO</span><h2>Libros</h2><p>Obras y autores que forman parte de mi recorrido como lector.</p></div>
+        <div class="intro-item"><span class="intro-index">02 / LECTURA</span><h2>Resúmenes</h2><p>Reconstruir las historias y sus personajes antes de interpretarlos.</p></div>
+        <div class="intro-item"><span class="intro-index">03 / INTERPRETACIÓN</span><h2>Críticas</h2><p>Preguntas, intuiciones y desacuerdos que nacen de la lectura.</p></div>
+      </div>
+    </div>
+    <section id="biblioteca" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="kicker">Archivo personal / 01</p><h2>Mi <em>biblioteca.</em></h2></div>
+          <p class="section-summary">Una selección inicial de libros que ya he leído. Las fichas y reflexiones se incorporarán conforme vaya escribiéndolas; este no es todavía el catálogo completo.</p>
+        </div>
+        <div class="book-grid">
+          <article class="book"><div class="book-cover cover-1" aria-hidden="true"><span class="cover-letter">E</span></div><div><p class="book-kind">Lectura registrada</p><h3>Entre el cielo y el suelo</h3><p class="book-author">Lorenzo Helguero</p></div></article>
+          <article class="book"><div class="book-cover cover-2" aria-hidden="true"><span class="cover-letter">D</span></div><div><p class="book-kind">Lectura registrada</p><h3>El décimo infierno</h3><p class="book-author">Mempo Giardinelli</p></div></article>
+          <article class="book"><div class="book-cover cover-3" aria-hidden="true"><span class="cover-letter">T</span></div><div><p class="book-kind">Lectura registrada</p><h3>Travesuras de la niña mala</h3><p class="book-author">Mario Vargas Llosa</p></div></article>
+          <article class="book"><div class="book-cover cover-4" aria-hidden="true"><span class="cover-letter">L</span></div><div><p class="book-kind">Lectura registrada</p><h3>Lima Nights</h3><p class="book-author">Marie Arana</p></div></article>
+          <article class="book"><div class="book-cover cover-5" aria-hidden="true"><span class="cover-letter">T</span></div><div><p class="book-kind">Lectura registrada</p><h3>El túnel</h3><p class="book-author">Ernesto Sábato</p></div></article>
+          <article class="book"><div class="book-cover cover-6" aria-hidden="true"><span class="cover-letter">C</span></div><div><p class="book-kind">Lectura registrada</p><h3>La caída</h3><p class="book-author">Albert Camus</p></div></article>
+        </div>
+        <p class="library-note">Las imágenes son composiciones tipográficas propias, no reproducciones de las portadas editoriales. Las lecturas aún no enlazan a reseñas: esas páginas se publicarán cuando exista un texto terminado.</p>
+      </div>
+    </section>
+    <section class="section reading-method" id="resumenes">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="kicker">Archivo personal / 02</p><h2>Leer y <em>anotar.</em></h2></div>
+          <p class="section-summary">Cada obra tendrá una ficha propia. La descripción de lo que ocurre en el libro estará separada de mi interpretación personal.</p>
+        </div>
+        <div class="method-grid">
+          <article class="method"><span class="num">01 / RESUMEN</span><h3>La historia y sus elementos</h3><p>Argumento, temas fundamentales y acontecimientos relevantes. Los personajes tendrán su propio apartado cuando su número o complejidad lo justifique. Se advertirá cuando haya spoilers.</p><span class="detail">DESCRIBIR LA OBRA, NO JUZGARLA</span></article>
+          <article class="method" id="criticas"><span class="num">02 / LECTURA CRÍTICA</span><h3>Lo que la obra me provoca pensar</h3><p>Interpretaciones, tensiones entre personajes, desacuerdos, preguntas y valoraciones personales. No se trata de establecer una lectura definitiva.</p><span class="detail">INTERPRETACIÓN PERSONAL</span></article>
+          <article class="method"><span class="num">03 / CITAS Y PASAJES</span><h3>Fragmentos para volver</h3><p>Pequeñas citas seleccionadas y sus comentarios, vinculadas con la obra y su autor. Las citas extensas no se reproducirán sin autorización.</p><span class="detail">CITAR CON CONTEXTO</span></article>
+          <article class="method"><span class="num">04 / PALABRAS Y NOTAS</span><h3>El margen de cada libro</h3><p>Vocabulario desconocido, anotaciones y conexiones con otras lecturas. Las obras podrán clasificarse en distintas categorías literarias sin duplicar su ficha.</p><span class="detail">UN ARCHIVO QUE CRECE CON CADA LECTURA</span></article>
+        </div>
+      </div>
+    </section>
+    <section class="section essay-section" id="acerca">
+      <div class="container essay-inner">
+        <div>
+          <p class="kicker">A propósito de estas páginas</p>
+          <h2 class="essay-heading">Sobre este <em>espacio.</em></h2>
+          <p class="essay-text">Este sitio reúne reflexiones personales nacidas de la lectura. No busca establecer interpretaciones definitivas, sino registrar las preguntas, intuiciones y desacuerdos que una obra puede suscitar.</p>
+        </div>
+        <div class="essay-aside">La literatura no termina cuando se cierra un libro. A veces, recién entonces empieza la conversación.
+          <small>Un cuaderno abierto</small>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container footer">
+    <span>© <span id="year">2026</span> · Reflexiones literarias · César Huamaní</span>
+    <span>Hecho para leer sin prisa. <a href="/">Volver al portafolio ↑</a></span>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
