@@ -435,3 +435,12 @@
   .diffusion-content {padding:24px 20px;}
   .diffusion-facts div {grid-template-columns:1fr;gap:2px;}
 }
+
+/* El enlace adicional de Difusión conserva la navegación legible en pantallas intermedias. */
+@media(min-width:761px) and (max-width:920px) {
+  .header-inner {gap:12px;}
+  .brand-caption {display:none;}
+  .nav {gap:13px;}
+  .nav a {font-size:10px;}
+  .nav .nav-contact {padding:10px 12px;}
+}
