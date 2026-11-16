@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="440" viewBox="0 0 780 440" role="img" aria-labelledby="title desc">
+<title id="title">Datametría: paquete de herramientas estadísticas en R</title>
+<desc id="desc">Ilustración de código R y gráfico de densidad estadística con intervalos de cuantiles sobre fondo azul oscuro.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#13394b"/><stop offset=".63" stop-color="#14273d"/><stop offset="1" stop-color="#0a1d30"/></linearGradient>
+<linearGradient id="curve" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#41bfae"/><stop offset="1" stop-color="#8ff7d5"/></linearGradient>
+<linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#60dec1" stop-opacity=".45"/><stop offset="1" stop-color="#60dec1" stop-opacity=".02"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#829db0" stroke-width=".65" stroke-opacity=".18"/></pattern>
+</defs>
+<rect width="780" height="440" rx="12" fill="url(#bg)"/>
+<rect width="780" height="440" rx="12" fill="url(#grid)"/>
+<circle cx="700" cy="40" r="124" fill="none" stroke="#77d9be" stroke-opacity=".14"/>
+<circle cx="700" cy="40" r="174" fill="none" stroke="#77d9be" stroke-opacity=".08"/>
+<rect x="34" y="31" width="48" height="48" rx="11" fill="#61dfc0"/>
+<text x="50" y="65" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="37" fill="#0b2635">R</text>
+<text x="97" y="61" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="31" letter-spacing=".5" fill="#edf8f9">DATAMETRÍA</text>
+<text x="35" y="112" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#a8c4d2">Herramientas para el análisis estadístico</text>
+<rect x="33" y="139" width="714" height="252" rx="10" fill="#0a1b2e" stroke="#466579" stroke-width="1.2"/>
+<rect x="33" y="139" width="714" height="38" rx="10" fill="#1b354b"/>
+<path d="M33 167v10h714v-10" fill="#1b354b"/>
+<circle cx="56" cy="158" r="6" fill="#ef898b"/><circle cx="77" cy="158" r="6" fill="#e6c27b"/><circle cx="98" cy="158" r="6" fill="#6fd7ac"/>
+<text x="127" y="163" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#c1d3df">datametria.R</text>
+<line x1="348" y1="193" x2="348" y2="369" stroke="#4a6477" stroke-opacity=".55"/>
+<text x="55" y="214" font-family="Consolas,monospace" font-size="14" fill="#7fe6c7">library</text><text x="119" y="214" font-family="Consolas,monospace" font-size="14" fill="#c4dbee">(datametria)</text>
+<text x="55" y="255" font-family="Consolas,monospace" font-size="14" fill="#8eabbe"># Limpieza de texto</text>
+<text x="55" y="280" font-family="Consolas,monospace" font-size="15" fill="#dcf5f3">limpiecito(x)</text>
+<text x="55" y="317" font-family="Consolas,monospace" font-size="14" fill="#8eabbe"># Estadística descriptiva</text>
+<text x="55" y="342" font-family="Consolas,monospace" font-size="15" fill="#dcf5f3">estadisticos(x)</text>
+<text x="372" y="213" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#b8cedb">Densidad por cuantiles</text>
+<path d="M377 360H722M377 247V360" stroke="#648296" stroke-width="1.2"/>
+<path d="M377 356 C420 355,449 342,470 312 S508 236,547 236 S596 310,625 329 S683 354,722 355 L722 360 H377 Z" fill="url(#shade)"/>
+<path d="M377 356 C420 355,449 342,470 312 S508 236,547 236 S596 310,625 329 S683 354,722 355" fill="none" stroke="url(#curve)" stroke-width="4" stroke-linecap="round"/>
+<path d="M467 360V312M547 360V236M628 360V331" stroke="#a2e8d2" stroke-opacity=".75" stroke-width="1.7" stroke-dasharray="5 6"/>
+<text x="398" y="383" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#7dc5b7">Q1</text>
+<text x="480" y="383" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#7dc5b7">Q2</text>
+<text x="568" y="383" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#7dc5b7">Q3</text>
+<text x="656" y="383" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#7dc5b7">Q4</text>
+<text x="35" y="422" font-family="Arial,Helvetica,sans-serif" font-size="13" letter-spacing="1.6" font-weight="700" fill="#74dec3">R  ·  ESTADÍSTICA  ·  DATOS</text>
+</svg>
