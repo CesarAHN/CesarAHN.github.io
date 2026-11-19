@@ -64,6 +64,13 @@
     .info-row dt{font:700 9px/1.5 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:#738876;margin:0 0 4px}
     .info-row dd{font:500 12px/1.8 var(--sans);color:#345143;margin:0}
     .aside-foot{font:400 11px/1.8 var(--sans);color:#64796b;margin:17px 0 0}
+    .comments-section{border-top:1px solid var(--line);padding:45px 0 56px}
+    .comments-inner{max-width:710px}
+    .comments-eyebrow{font:700 10px/1.6 var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--rust)}
+    .comments-section h2{font:400 clamp(26px,3.5vw,36px)/1.35 var(--serif);letter-spacing:-.035em;color:var(--forest);margin:11px 0 10px}
+    .comments-intro{font:400 13px/1.9 var(--sans);color:var(--muted);margin:0 0 22px}
+    .comments-panel{background:var(--paper);border:1px solid var(--line);padding:24px;min-height:115px}
+    .comments-pending{margin:0;font:400 13px/1.8 var(--sans);color:var(--muted)}
     .end-links{border-top:1px solid var(--line);padding:25px 0 35px;display:flex;justify-content:space-between;align-items:center;gap:16px}
     .end-links a{font:700 12px var(--sans);color:var(--forest);border-bottom:1px solid var(--rust);padding-bottom:6px}
     .footer{background:var(--forest);color:#c9d7cd;padding:28px 0;font:500 11px var(--sans)}
@@ -177,9 +184,41 @@
         
       </aside>
     </div>
+    <section class="wrap comments-section" id="comentarios" aria-labelledby="comentarios-title">
+      <div class="comments-inner">
+        <div class="comments-eyebrow">Conversación literaria</div>
+        <h2 id="comentarios-title">¿Qué te pareció esta lectura?</h2>
+        <p class="comments-intro">Comparte tu interpretación, tus preguntas o las ideas que te dejó el cuento.</p>
+        <div class="comments-panel">
+          <div id="disqus_thread"></div>
+          <p class="comments-pending" id="disqus-pending">Los comentarios estarán disponibles cuando se complete la configuración de Disqus.</p>
+          <noscript>Activa JavaScript para ver y escribir comentarios.</noscript>
+        </div>
+      </div>
+    </section>
     <div class="wrap end-links"><a href="../">← Volver al blog</a><a href="../#resenas">Ver reseñas ↗</a></div>
   </main>
   <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year">2026</span> · Reflexiones literarias · César Huamaní</span><a href="../../">Portafolio profesional ↗</a></div></footer>
+  <script>
+    (function () {
+      // Introducir aquí el shortname del sitio registrado en Disqus.
+      var disqusShortname = "";
+      if (!disqusShortname) return;
+      window.disqus_config = function () {
+        this.page.url = "https://cesarahn.github.io/lecturas/el-sueno-de-un-hombre-ridiculo/";
+        this.page.identifier = "el-sueno-de-un-hombre-ridiculo";
+        this.page.title = "El sueño de un hombre ridículo | Reflexiones literarias";
+      };
+      var script = document.createElement("script");
+      script.src = "https://" + disqusShortname + ".disqus.com/embed.js";
+      script.async = true;
+      script.setAttribute("data-timestamp", String(Date.now()));
+      script.onload = function () {
+        document.getElementById("disqus-pending").hidden = true;
+      };
+      (document.head || document.body).appendChild(script);
+    }());
+  </script>
   <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body>
 </html>
