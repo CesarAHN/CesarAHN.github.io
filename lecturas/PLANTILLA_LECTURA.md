@@ -7,7 +7,7 @@
 - Autor de la obra:
 - Género:
 - Edición / traductor / editorial / año:
-- Autor de la reflexión: César Huamaní
+- Autor de la reflexión: César Huamaní Ninahuanca
 - Título de la entrada (puede coincidir con el libro o ser un título propio):
 - Subtítulo opcional:
 - Advertencia de spoilers (si corresponde):
