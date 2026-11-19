@@ -190,8 +190,8 @@
         <h2 id="comentarios-title">¿Qué te pareció esta lectura?</h2>
         <p class="comments-intro">Comparte tu interpretación, tus preguntas o las ideas que te dejó el cuento.</p>
         <div class="comments-panel">
-          <div id="disqus_thread"></div>
-          <p class="comments-pending" id="disqus-pending">Los comentarios estarán disponibles cuando se complete la configuración de Disqus.</p>
+          <div class="giscus"></div>
+          <p class="comments-pending" id="giscus-pending">Los comentarios estarán disponibles cuando se active GitHub Discussions y se complete la configuración de Giscus.</p>
           <noscript>Activa JavaScript para ver y escribir comentarios.</noscript>
         </div>
       </div>
@@ -201,22 +201,29 @@
   <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year">2026</span> · Reflexiones literarias · César Huamaní</span><a href="../../">Portafolio profesional ↗</a></div></footer>
   <script>
     (function () {
-      // Introducir aquí el shortname del sitio registrado en Disqus.
-      var disqusShortname = "";
-      if (!disqusShortname) return;
-      window.disqus_config = function () {
-        this.page.url = "https://cesarahn.github.io/lecturas/el-sueno-de-un-hombre-ridiculo/";
-        this.page.identifier = "el-sueno-de-un-hombre-ridiculo";
-        this.page.title = "El sueño de un hombre ridículo | Reflexiones literarias";
-      };
+      // Activar GitHub Discussions, instalar la app de Giscus y copiar aquí
+      // el ID de la categoría obtenido en https://giscus.app/es
+      var giscusCategoryId = "";
+      if (!giscusCategoryId) return;
       var script = document.createElement("script");
-      script.src = "https://" + disqusShortname + ".disqus.com/embed.js";
+      script.src = "https://giscus.app/client.js";
+      script.dataset.repo = "CesarAHN/CesarAHN.github.io";
+      script.dataset.repoId = "R_kgDOR58ymA";
+      script.dataset.category = "General";
+      script.dataset.categoryId = giscusCategoryId;
+      script.dataset.mapping = "pathname";
+      script.dataset.strict = "0";
+      script.dataset.reactionsEnabled = "1";
+      script.dataset.emitMetadata = "0";
+      script.dataset.inputPosition = "top";
+      script.dataset.theme = "light";
+      script.dataset.lang = "es";
+      script.setAttribute("crossorigin", "anonymous");
       script.async = true;
-      script.setAttribute("data-timestamp", String(Date.now()));
       script.onload = function () {
-        document.getElementById("disqus-pending").hidden = true;
+        document.getElementById("giscus-pending").hidden = true;
       };
-      (document.head || document.body).appendChild(script);
+      document.head.appendChild(script);
     }());
   </script>
   <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
